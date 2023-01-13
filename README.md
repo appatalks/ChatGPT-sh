@@ -1,3 +1,5 @@
+(Check out the screenshots! I documented how I got here lol)
+
 ## Introduction
 This is a bash script that makes an API call to the OpenAI API to generate text using the ChatGPT model.
 
