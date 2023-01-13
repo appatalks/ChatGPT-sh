@@ -7,16 +7,17 @@ Before using this script, you will need:
 - `curl` command line tool. This is used to make the API call.
 
 ## Usage
-To use the script, you will need to provide your API key and your prompt. The script will then make an API call to the OpenAI API, using the provided prompt to generate text using the ChatGPT model.
+To use the script, you will need to replace "API_KEY" with your key in the script. Executing the script will then make an API call to the OpenAI API, using the provided prompt to generate text using the ChatGPT model.
 
 Here's an example of how to use the script:
-./openai_script.sh -k YOUR_API_KEY -p "What would you like to know?"
+
+./chatgpt.sh "What would you like to know?"
 
 
 ## Additional parameters
 The script also accept some additional parameters such as temperature, max_tokens, top_p, frequency_penalty, presence_penalty, etc.
 
-./openai_script.sh -k YOUR_API_KEY -p "What would you like to know?" -t 0.7 -m 20 -p 1 -f 0 -r 0
+./chatgpt.sh "What would you like to know?" -t 0.7 -m 20 -p 1 -f 0 -r 0
 
 You can find more information about these parameters in the OpenAI API documentation.
 
