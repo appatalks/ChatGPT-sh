@@ -1,4 +1,5 @@
 ** Check out the screenshots! I documented how I got here using ChatGPT :D
+
 ** Python Script added using OpenAI SDK
 
 ## Introduction
