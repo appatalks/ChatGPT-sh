@@ -1,4 +1,5 @@
 ** Check out the screenshots! I documented how I got here using ChatGPT :D
+** Python Script added using OpenAI SDK
 
 ## Introduction
 This is a bash script that makes an API call to the OpenAI API to generate text using the ChatGPT model.
