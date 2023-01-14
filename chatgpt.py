@@ -9,7 +9,7 @@ prompt = "I would like to ask a question please."
 while True:
     # Make API call
     response = openai.Completion.create(
-        engine="davinci",
+        engine="text-davinci-002",
         prompt=prompt,
         temperature=0.7,
         max_tokens=260,
