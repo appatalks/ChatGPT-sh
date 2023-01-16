@@ -2,6 +2,12 @@
 
 ** Python Script added using OpenAI SDK
 
+## Originally created this repo as a proof of Concept. 
+Will likely use as a dumping ground till I can organize all the things. Fun stuff for sure! Original README Down below
+
+------------------------------------------------------
+
+
 ## Introduction
 This is a bash script that makes an API call to the OpenAI API to generate text using the ChatGPT model.
 
