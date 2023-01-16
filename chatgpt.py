@@ -33,8 +33,14 @@ while True:
     # Extract text from response
     text = response.choices[0].text
 
+    # Remove leading and trailing whitespace from the text
+    text = text.strip()
+
+    # Print the text to the console
+    print("AI: " + text)
+
     # Speak the text using flite
-    subprocess.run(["flite", "-voice", "slt", "--setf", "duration_stretch=1.15", "--setf", "int_f0_target_mean=160", "-pw", "-t", text])
+    subprocess.run(["flite", "-voice", "slt", "--setf", "duration_stretch=1.15", "--setf", "int_f0_target_mean=160", "-pw", "-t", text], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
     # Log the conversation
     logger.info("User: {}", initial_prompt)
