@@ -11,6 +11,32 @@ logger.add("/tmp/ai.log", format="{message}")
 # Variables
 openai.api_key = "API_KEY"
 
+# Select the engine
+print("Select the engine you want to use:")
+print("1. text-davinci-003 (powerful language generation model)")
+print("2. text-davinci-002 (powerful language generation model)")
+print("3. code-davinci-002 (code generation model)")
+print("4. text-curie-001 (conversational model)")
+
+engine_choice = input("Enter the number of your choice (default: 1): ") or "1"
+engine_choice = int(engine_choice)
+engine = ""
+
+if engine_choice == 1:
+    engine = "text-davinci-003"
+elif engine_choice == 2:
+    engine = "text-davinci-002"
+elif engine_choice == 3:
+    engine = "code-davinci-002"
+elif engine_choice == 4:
+    engine = "text-curie-001"
+else:
+    print("Invalid choice, using text-davinci-003 as the default engine.")
+    engine = "text-davinci-003"
+
+max_tokens = input("Enter the maximum number of tokens between 50 and 4000 for max_tokens (default: 160): ") or "160"
+max_tokens = int(max_tokens)
+
 # Prompt the user for their initial input
 initial_prompt = input("You: ") 
 prompt = initial_prompt
@@ -19,10 +45,10 @@ prompt = initial_prompt
 while True:
     # Make API call
     response = openai.Completion.create(
-        engine="text-davinci-002",
+        engine=engine,
         prompt=prompt,
         temperature=0.7,
-        max_tokens=160,
+        max_tokens= max_tokens,
         n=1,
         stop=None,
         top_p=1,
