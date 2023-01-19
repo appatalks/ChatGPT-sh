@@ -1,6 +1,6 @@
 ** Check out the screenshots! I documented how I got here using ChatGPT :D
 
-** Python Script added using OpenAI SDK - Best to use this one :)
+** Python Script added using OpenAI SDK - chatgpt.py - Best to use this one :)
 
 ## Originally created this repo as a proof of Concept. 
 Will likely use as a dumping ground till I can organize all the things. Fun stuff for sure! Original README Down below
