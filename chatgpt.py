@@ -34,8 +34,13 @@ else:
     print("Invalid choice, using text-davinci-003 as the default engine.")
     engine = "text-davinci-003"
 
-max_tokens = input("Enter the maximum number of tokens between 50 and 4000 for max_tokens (default: 160): ") or "160"
-max_tokens = int(max_tokens)
+while True:
+    max_tokens = input("Enter the maximum number of tokens between 50 and 4000 for max_tokens (default: 160): ") or "160"
+    max_tokens = int(max_tokens)
+    if max_tokens < 50 or max_tokens > 4000:
+        print("Invalid value entered, please enter a value between 50 and 4000.")
+    else:
+        break
 
 # Prompt the user for their initial input
 initial_prompt = input("You: ") 
