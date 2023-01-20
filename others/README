@@ -2,3 +2,4 @@ Other Script's either created by ChatGPT or for use with ChatGPT.
 
 1) bookmark-chatgpt.js - Bookmarklet ChatGPT Created code to download Webpage Tab as HTML File
 2) bookmark.js - Bookmarklet to Save ChatGPT Chat to an HTML file. Borrowed from https://github.com/jcubic/chat-gpt/ (I like this one better)
+3) galaxy_of_stars.py - Stars in OpenGL. Proof of concept.
