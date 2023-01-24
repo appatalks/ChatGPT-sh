@@ -7,6 +7,7 @@ Will likely use as a dumping ground till I can organize all the things. Fun stuf
 
 ## Introduction
 This is a bash script that makes an API call to the OpenAI API to generate text using the ChatGPT model.
+- Initial: prompt="You are a Linux Terminal. Only respond with $: $1"
 
 ## Prerequisites
 Before using this script, you will need:
@@ -14,7 +15,7 @@ Before using this script, you will need:
 - `curl` command line tool. This is used to make the API call.
 
 ## Usage
-To use the script, you will need to replace "API_KEY" with your key in the script. Executing the script will then make an API call to the OpenAI API, using the provided prompt to generate text using the ChatGPT model. (Initial: prompt="You are a Linux Terminal. Only respond with $: $1")
+To use the script, you will need to replace "API_KEY" with your key in the script. Executing the script will then make an API call to the OpenAI API, using the provided prompt to generate text using the ChatGPT model. 
 
 Here's an example of how to use the script:
 
