@@ -21,6 +21,10 @@ Here's an example of how to use the script:
 
 ./chatgpt.sh "find registrar information of domain" <p>
 $ whois domainname.com
+  
+./chatgpt.sh "AWS CLI to determine FQDN of EC2 instance" <p>
+$ aws ec2 describe-instances --instance-ids <instance-id> | grep PublicDnsName | awk {print $2}
+  
 
 ## Additional parameters
 The script also accept some additional parameters such as temperature, max_tokens, top_p, frequency_penalty, presence_penalty, etc.
